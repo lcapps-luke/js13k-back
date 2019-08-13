@@ -1,0 +1,12 @@
+-cp game/src
+-main lcann.back.Main
+-js build/Back.js
+-dce full
+
+--next
+
+-cp pack/src
+-main lcann.pack.Main
+-neko build/PackTool.n
+-cmd neko build/PackTool.n
+-lib zip
