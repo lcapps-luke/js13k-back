@@ -1,0 +1,24 @@
+.header .menu{
+	float: right;
+	font-size: 1.5em;
+	margin-right: 0.7em;
+	cursor: pointer;
+}
+
+.header{
+	text-align: center;
+	background-color: #4B6;
+	padding:0.5em 0 0.5em 0;
+	color: #FFF; 
+}
+
+.header h1{
+	display: inline;
+	cursor: pointer;
+	font-size: 2em;
+}
+
+.body{
+	height: calc(100% - 3em);
+	overflow: auto;
+}

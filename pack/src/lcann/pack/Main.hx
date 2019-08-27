@@ -42,10 +42,12 @@ class Main {
 	private static function build()
 	{
 		var pageTemplate:String = File.getContent("res/index.html");
+		
 		var script:String = File.getContent("build/Back.js");
+		var style:String = FileAccumulator.getAllContentFromFolder("res/css");
 		
 		var tpl:Template = new Template(pageTemplate);
-		var out:String = tpl.execute({src: script});
+		var out:String = tpl.execute({src: script, css: style});
 		
 		File.saveContent(finalUncompressedDir + "index.html", out);
 	}

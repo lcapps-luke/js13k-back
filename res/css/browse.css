@@ -1,0 +1,10 @@
+.proj{
+	display: inline-block;
+	width: calc(100% / 3 - 40px);
+	min-width: 200px;
+	margin: 20px;
+}
+
+.proj .svg{
+	width: 100%;
+}
